@@ -3,7 +3,7 @@
 # If any of the commands fails with an error, make the script exit early with an error, by using the set -e command.
 set -e
 
-# Build the single executable target, in the release configuration, for both arm64 and x86_64 architectures.
+# Build the single executable target, in the release configuration.
 # Following that, use the --show-bin-path argument to store the path where the resulting binary will be at.
 swift build -c release --product giveawaypicker
 BUILD_PATH=$(swift build -c release --product giveawaypicker --show-bin-path)

@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build macOS binary
-        run: scripts/build-arm64-macos.sh
+        run: scripts/build-macos.sh
       - name: 'Upload macOS Build Artifact'
         uses: actions/upload-artifact@v4
         with:
